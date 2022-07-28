@@ -25,13 +25,21 @@
         font-weight: 600;
 
     }
-
+    .button-bg{
+        background-color: #289BDE;
+        color: white;
+        padding: 13px 33px;
+        border:none;
+        border-radius: 5px;
+    }
     .my-bg {
         filter: brightness(60%);
     }
 
     #institute .row .col-md-6 {
         padding-right: 0;
+       
+        
     }
 </style>
 
@@ -39,7 +47,7 @@
     <!-- header section  -->
     <header>
         <!-- navbar section  -->
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <h1>Learn Web</h1>
@@ -55,26 +63,32 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses </a>
+                            <a class="nav-link" href="#courses">Courses </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Deals </a>
+                            <a class="nav-link" href="#institute">Institute </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Success </a>
+                            <a class="nav-link" href="#student">Student </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#frequent">Quecation </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
                         </li>
 
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
         <!-- navbar section  -->
         <!-- img slider -->
-        <section class="container">
+        <section class="container my-5 pt-5">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -96,7 +110,7 @@
                             <p class="p-text">It is a long established fact that a reader will be distracted by the
                                 readable content of
                                 a page when looking at its layout.</p>
-                            <button class="btn btn-info">Get Started</button>
+                            <button class="button-bg">Get Started</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -109,7 +123,7 @@
                             <p class="p-text">It is a long established fact that a reader will be distracted by the
                                 readable content of
                                 a page when looking at its layout.</p>
-                            <button class="btn btn-info">Get Started</button>
+                            <button class="button-bg">Get Started</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -123,7 +137,7 @@
                             <p class="p-text"> It is a long established fact that a reader will be distracted by the
                                 readable content of
                                 a page when looking at its layout.</p>
-                            <button class="btn btn-info">Get Started</button>
+                            <button class="button-bg">Get Started</button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +158,7 @@
     <!-- header section end -->
     <main>
         <!-- Courses section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="courses">
             <h1 class="text-center">Discover Our Popular
                 Courses</h1>
             <p class="text-center text-secondary">It is a long established fact that a reader will be distracted by the
@@ -262,10 +276,10 @@
 
             </div>
             <div class="d-flex   justify-content-center d-md-none d-none d-lg-flex mt-3">
-                <button class="btn btn-info px-4 py-2">See More Course</button>
+                <button class="button-bg px-4 py-2">See More Course</button>
             </div>
             <div class="d-flex justify-content-center d-md-flex d-sm-flex d-lg-none mt-3">
-                <button class="btn btn-info px-4 py-4">view All</button>
+                <button class="button-bg px-4 py-4">view All</button>
             </div>
 
         </section>
@@ -305,7 +319,7 @@
                                 <p>Rating & Review</p>
                             </div>
                         </div>
-                        <button class="btn btn-info px-4 py-3 mb-4">Read More</button>
+                        <button class="button-bg px-4 py-3 mb-4">Read More</button>
 
                     </div>
 
@@ -314,7 +328,7 @@
         </section>
         <!-- institute section end  -->
         <!-- student section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="student">
             <div class="w-75">
                 <h1>Meet Our Successfull <br>
                     Students</h1>
@@ -365,7 +379,7 @@
 
             </div>
             <div class="d-flex   justify-content-center d-md-none d-none d-lg-flex mt-5">
-                <button class="btn btn-info px-4 py-2">View All</button>
+                <button class="button-bg px-4 py-2">View All</button>
             </div>
         </section>
         <!-- student section end -->
@@ -436,13 +450,13 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center d-md-none d-sm-flex d-lg-none mt-3">
-                <button class="btn btn-info px-4 py-4">view All</button>
+                <button class="button-bg px-4 py-4">view All</button>
             </div>
         </section>
         <!-- feedback section  -->
 
         <!-- frequent quecation section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="frequent">
             <h1 class="text-center my-3">Frequently Asked Questions
             </h1>
             <p class="text-center">It is a long established fact that a reader will be distracted by the readable <br>
@@ -450,71 +464,119 @@
             </p>
             <!-- accordion  -->
 
-         <div class="d-flex align-items-center justify-content-center">
-            <div class="col-md-12 col-sm-12 col-lg-7">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is the Difference between flexbox and grid?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col-md-12 col-sm-12 col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is the Difference between flexbox and grid?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox
+                                    was designed for layout in one dimension - either a row or a column. Grid was
+                                    designed for two-dimensional layout - rows, and columns at the same time. The two
+                                    specifications share some common features, however, and if you have already learned
+                                    how to use flexbox, the similarities should help you get to grips with Grid.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What is the Difference between Bootstrap and Tailwind?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit. Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is the Difference between Bootstrap and Tailwind?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Bootstrap comes with a set of pre-styled responsive, mobile-first components that
+                                    possess a definite UI kit. Tailwind CSS uses a set of utility classes to create a
+                                    neat UI with more flexibility and uniqueness.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                             What is css box model 
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is css box model
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    When laying out a document, the browser's rendering engine represents each element
+                                    as a rectangular box according to the standard CSS basic box model. CSS determines
+                                    the size, position, and properties (color, background, border size, etc.) of these
+                                    boxes.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                what is semantic tag
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages. 
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    what is semantic tag
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The HTML semantics refers to the tags that provide meaning to an HTML page rather
+                                    than just presentation. It makes HTML more comprehensible by better defining the
+                                    different sections and layout of web pages.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-         </div>
         </section>
         <!-- frequent quecation section  -->
+        <!-- companis section  -->
+        <section class="container my-5">
+           <h1 class="text-center">Trusted by over 800+ companies</h1>
+                <div class="d-lg-flex d-md-none d-none justify-content-between my-5">
+
+                    <img src="images/company/company-1.png" alt="">
+                    <img src="images/company/company-2.png" alt="">
+                    <img src="images/company/company-3.png" alt="">
+                    <img src="images/company/company-4.png" alt="">
+                    <img src="images/company/company-5.png" alt="">
+                    <img src="images/company/company-6.png" alt="">
+
+            
+            </div>
+        </section>
+        <!-- companis section end -->
     </main>
+    <!-- main end  -->
+    <!-- footer section  -->
+        <footer style="height: 470px; background: #161616;" class=" mt-5" id="footer">
+            <div class="d-flex align-items-center justify-content-center h-100">
+               <div class="">
+                    <h1 class="text-white text-center">Learn Web</h1>
+                    <p class="text-white text-center"><small>Office 41, Zawaya Buildin, Ghala Muscat,</small> <br>
+                        <small>Sultanate of Oman</small></p>
+                    <p class="text-white text-center"><small>Privacy Ploicy  |   Terms of use</small></p>
+                    <div class="d-flex justify-content-center">
+                        <i class="fa-brands fa-facebook text-white px-2"></i>
+                        <i class="fa-brands fa-twitter text-white px-2"></i>
+                        <i class="fa-brands fa-instagram text-white px-2"></i>
+
+                    </div>
+
+               </div>
+
+            </div>
+        </footer>
+    <!-- footer section  -->
     <script src="bootstrap/java/bootstrap.min.js"></script>
 </body>
 
